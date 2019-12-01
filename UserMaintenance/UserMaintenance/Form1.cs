@@ -55,5 +55,13 @@ namespace UserMaintenance
 
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var del = from x in users
+                      where x.ID.ToString() == listBox1.SelectedValue.ToString()
+                      select x;
+            users.Remove(del.FirstOrDefault());
+        }
     }
 }
