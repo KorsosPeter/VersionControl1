@@ -26,6 +26,7 @@ namespace UserMaintenance
             listBox1.ValueMember = "ID";
             listBox1.DisplayMember = "FullName";
             button2.Text = Resource1.FileSave;
+            button3.Text = Resource1.Del;
         }
 
         private void button1_Click(object sender, EventArgs e)
